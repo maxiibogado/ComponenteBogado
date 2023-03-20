@@ -7,12 +7,14 @@
     app-toolbar { 
         grid-area: 1 / 1 / 2 / 6;
         background-color: #F8F9FA;
+        padding: 30px;
     }
     
     app-navbar { 
         grid-area: 2 / 1 / 6 / 2; 
-        background-color: aqua;
         padding: 30px;
+        display: flex;
+        align-items: center;
     }
     
     app-producto { 
