@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ComponentesBogado';
+
+  tituloPrincipal = 'Este titulo viene del appComponent'
+
+  test(){
+    console.log("El mes ingresado es: ");   
+  }
+
+  mostrarCantidad(event:number){
+    console.log(event);
+    
+    alert(event);
+  }
+
 }

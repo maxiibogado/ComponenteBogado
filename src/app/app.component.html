@@ -1,6 +1,6 @@
 <div class="parent">
   <app-toolbar></app-toolbar>
-  <app-navbar></app-navbar>
+  <app-navbar [nombreFicticio]="tituloPrincipal" (mes)="test()" (cantidadHoverTitulo)="mostrarCantidad($event)" ></app-navbar>
   <!-- <app-producto></app-producto> -->
   <app-listado-alumnos></app-listado-alumnos>
 </div>

@@ -13,8 +13,6 @@
     app-navbar { 
         grid-area: 2 / 1 / 6 / 2; 
         padding: 30px;
-        display: flex;
-        align-items: center;
     }
     
     app-listado-alumnos { 
