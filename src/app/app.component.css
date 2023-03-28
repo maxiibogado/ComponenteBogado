@@ -17,6 +17,6 @@
         align-items: center;
     }
     
-    app-producto { 
+    app-listado-alumnos { 
         grid-area: 2 / 2 / 6 / 6;
     }

@@ -1,0 +1,24 @@
+<h2>Listado de alumnos</h2>
+
+<ul>
+    <li *ngFor="let alumno of alumnos"  [ngClass]="{'mayoresDeTreinta':alumno[3]>30,'menoresDeTreinta':alumno[3]<30}">
+        {{alumno[1] + " " + alumno[2] | titlecase }}
+    </li>
+</ul>
+
+<h3>Listado de alumnos menores de 30 años</h3>
+<ul>
+    <li *ngFor="let menor of filtrarMenores(alumnos)">
+        {{menor[1] + " " + menor[2] | titlecase }} {{ " tiene " + menor[3] + " años"}}
+    </li>
+</ul> 
+<h3>Listado de alumno mayores de 30 años</h3>
+<!-- <div *ngFor="let alumno of alumnos" >
+    <p *ngIf="alumno[3]>30">
+        {{alumno[1] + " " + alumno[2] | uppercase }}
+    </p>
+</div> -->
+<ng-container *ngFor="let alumno of alumnos">
+    <li *ngIf="alumno[3] > 30">
+        {{alumno[1] + " " + alumno[2] | uppercase }}    </li>
+</ng-container>
